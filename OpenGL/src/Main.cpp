@@ -9,7 +9,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(800, 500, "Hello World", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -27,8 +27,8 @@ int main(void)
 
         glBegin(GL_QUADS);
         glVertex2f(-0.5f, -0.5f);
-        glVertex2f(0.5f, 0.5f);
         glVertex2f(0.5f, -0.5f);
+        glVertex2f(0.5f, 0.5f);
         glVertex2f(-0.5f, 0.5f);
         glEnd();
 
